@@ -5,10 +5,12 @@ import { Outlet } from "react-router-dom";
 
 const Root: React.FC = () => {
   return (
-    <Container>
+    <>
       <Navbar />
-      <Outlet />
-    </Container>
+      <Container className="mb-4">
+        <Outlet />
+      </Container>
+    </>
   );
 };
 
