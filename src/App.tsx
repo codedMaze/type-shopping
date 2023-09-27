@@ -1,7 +1,14 @@
+import { RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import Root from "./layout/Root";
+
 function App() {
+  const router = createBrowserRouter([
+    { path: "/", element: <Root />, children: [] },
+  ]);
   return (
     <>
-      <h2>Hello world!!!</h2>
+      <RouterProvider router={router} />
     </>
   );
 }
