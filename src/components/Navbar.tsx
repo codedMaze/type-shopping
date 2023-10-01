@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Container,
   Nav,
@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
     <NavContainer className="bg-white shadow-sm mb-3" sticky="top">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="">
+          <Nav.Link as={NavLink} to="">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="about">
+          <Nav.Link as={NavLink} to="about">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="store">
+          <Nav.Link as={NavLink} to="store">
             Store
           </Nav.Link>
         </Nav>
